@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App copyright -->
+<<<<<<< HEAD
     <string name="application_copyright">Copyright \u00A9 Team HellFire 2013</string>
     <!-- App version -->
     <string name="application_version" translatable="false">1.1</string>
+=======
+    <string name="application_copyright">Copyright \u00A9 2013 The CyanogenMod Project</string>
+    <!-- App version -->
+    <string name="application_version" translatable="false">1.0</string>
+>>>>>>> upstream/cm-11.0
 
     <!-- Strings for the customization mode -->
     <!-- Text for sorting mode button -->
@@ -26,7 +32,11 @@
 
     <!-- UI -->
     <!-- Homescreen -->
+<<<<<<< HEAD
     <string name="preferences_interface_homescreen_title">HellFire™ Homescreen</string>
+=======
+    <string name="preferences_interface_homescreen_title">Homescreen</string>
+>>>>>>> upstream/cm-11.0
     <string name="preferences_interface_homescreen_summary">Screens and wallpaper</string>
     <string name="preferences_interface_homescreen_search_title">Search bar</string>
     <string name="preferences_interface_homescreen_search_summary">Show persistent search bar at top of screen</string>
@@ -46,4 +56,8 @@
     <string name="preferences_interface_general_title">General</string>
     <string name="preferences_interface_general_large_icons_title">Larger icons</string>
     <string name="preferences_interface_general_large_icons_summary">Use extra large application icons in homescreen and drawer</string>
+<<<<<<< HEAD
 </resources>
+=======
+</resources>
+>>>>>>> upstream/cm-11.0
