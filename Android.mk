@@ -35,11 +35,9 @@ LOCAL_PROTOC_FLAGS := --proto_path=$(LOCAL_PATH)/protos/
 LOCAL_SDK_VERSION := 19
 
 LOCAL_PRIVILEGED_MODULE := true
-<<<<<<< HEAD
+
 LOCAL_PACKAGE_NAME := Catapult
-=======
-LOCAL_PACKAGE_NAME := Trebuchet
->>>>>>> upstream/cm-11.0
+
 #LOCAL_CERTIFICATE := shared
 
 LOCAL_OVERRIDES_PACKAGES := Launcher3
