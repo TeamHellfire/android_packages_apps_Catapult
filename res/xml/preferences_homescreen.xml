@@ -15,21 +15,11 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:launcher="http://schemas.android.com/apk/res/com.cyanogenmod.trebuchet"
+        xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher3"
         android:key="ui_homescreen"
         android:title="@string/preferences_interface_homescreen_title">
     <CheckBoxPreference android:key="ui_homescreen_search"
             android:title="@string/preferences_interface_homescreen_search_title"
             android:summary="@string/preferences_interface_homescreen_search_summary"
             android:defaultValue="@bool/preferences_interface_homescreen_search_default" />
-    <PreferenceCategory android:title="@string/preferences_interface_homescreen_scrolling_category">
-        <CheckBoxPreference android:key="ui_homescreen_scrolling_wallpaper_scroll"
-                android:title="@string/preferences_interface_homescreen_scrolling_wallpaper_scroll_title"
-                android:summary="@string/preferences_interface_homescreen_scrolling_wallpaper_scroll_summary"
-                android:defaultValue="@bool/preferences_interface_homescreen_scrolling_wallpaper_scroll_default" />
-        <CheckBoxPreference android:key="ui_homescreen_scrolling_page_outlines"
-                android:title="@string/preferences_interface_homescreen_scrolling_page_outlines_title"
-                android:summary="@string/preferences_interface_homescreen_scrolling_page_outlines_summary"
-                android:defaultValue="@bool/preferences_interface_homescreen_scrolling_page_outlines_default" />
-    </PreferenceCategory>
 </PreferenceScreen>

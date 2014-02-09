@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2013 The Android Open Source Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
+      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
 
@@ -17,19 +17,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/default_screen_button"
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_gravity="center_horizontal|top"
-        android:paddingTop="@dimen/overview_panel_top_padding"
-        android:text="@string/default_screen_button_text"
-        android:drawablePadding="4dp"
-        android:drawableTop="@drawable/default_screen_button"
-        android:gravity="center_horizontal"
-        android:fontFamily="sans-serif-condensed"
-        android:textAllCaps="true"
-        android:textSize="12sp" />
+        android:paddingTop="@dimen/overview_panel_top_padding">
+
+        <TextView
+            android:id="@+id/default_screen_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
+            android:text="@string/default_screen_button_text"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/default_screen_button"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/transition_effect_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
+            android:text="@string/transition_effect_button_text"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/wallpaper_button"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/icon_pack_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
+            android:text="@string/icon_packs_title"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/iconpack_button"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -43,6 +85,8 @@
             android:id="@+id/wallpaper_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
             android:text="@string/wallpaper_button_text"
             android:drawablePadding="4dp"
             android:drawableTop="@drawable/wallpaper_button"
@@ -54,6 +98,8 @@
             android:id="@+id/sort_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
             android:text="@string/sort_button_text"
             android:drawablePadding="4dp"
             android:drawableTop="@drawable/wallpaper_button"
@@ -61,13 +107,12 @@
             android:fontFamily="sans-serif-condensed"
             android:textAllCaps="true"
             android:textSize="12sp" />
-        <Space
-            android:layout_width="@dimen/overview_panel_buttonSpacing"
-            android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/widget_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
             android:text="@string/widget_button_text"
             android:drawablePadding="4dp"
             android:gravity="center_horizontal"
@@ -79,6 +124,8 @@
             android:id="@+id/filter_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
             android:text="@string/filter_button_text"
             android:drawablePadding="4dp"
             android:gravity="center_horizontal"
@@ -86,13 +133,12 @@
             android:fontFamily="sans-serif-condensed"
             android:textAllCaps="true"
             android:textSize="12sp"/>
-        <Space
-            android:layout_width="@dimen/overview_panel_buttonSpacing"
-            android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/overview_panel_button_spacing"
+            android:paddingRight="@dimen/overview_panel_button_spacing"
             android:text="@string/settings_button_text"
             android:drawablePadding="4dp"
             android:gravity="center_horizontal"
