@@ -709,6 +709,7 @@ public class Workspace extends SmoothPagedView
 
     public boolean hasExtraEmptyScreenLeft() {
         return mWorkspaceScreens.containsKey(EXTRA_EMPTY_SCREEN_LEFT_ID) && getChildCount() - numCustomPages() > 1;
+<<<<<<< HEAD
     }
 
     public boolean hasExtraEmptyScreenRight() {
@@ -723,6 +724,22 @@ public class Workspace extends SmoothPagedView
         return (hasExtraEmptyScreenLeft() ? 1 : 0) + (hasExtraEmptyScreenRight() ? 1 : 0);
     }
 
+=======
+    }
+
+    public boolean hasExtraEmptyScreenRight() {
+        return mWorkspaceScreens.containsKey(EXTRA_EMPTY_SCREEN_RIGHT_ID) && getChildCount() - numCustomPages() > 1;
+    }
+
+    public boolean hasExtraEmptyScreens() {
+        return hasExtraEmptyScreenLeft() || hasExtraEmptyScreenRight();
+    }
+
+    public int numExtraEmptyScreens() {
+        return (hasExtraEmptyScreenLeft() ? 1 : 0) + (hasExtraEmptyScreenRight() ? 1 : 0);
+    }
+
+>>>>>>> upstream/cm-11.0
     public long commitExtraEmptyScreen(long screenId) {
         int index = getPageIndexForScreenId(screenId);
         CellLayout cl = mWorkspaceScreens.get(screenId);
@@ -3960,7 +3977,7 @@ public class Workspace extends SmoothPagedView
                 // be done post drop animation.
                 stripEmptyScreens();
             }
-        } else if (mDragInfo != null) {
+        } else if (mDragInfo != null && (!(target instanceof InfoDropTarget))) {
             CellLayout cellLayout;
             if (mLauncher.isHotseatLayout(target)) {
                 cellLayout = mLauncher.getHotseat().getLayout();
