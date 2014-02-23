@@ -34,11 +34,8 @@ LOCAL_PROTOC_FLAGS := --proto_path=$(LOCAL_PATH)/protos/
 
 LOCAL_SDK_VERSION := 19
 
-<<<<<<< HEAD
 LOCAL_PACKAGE_NAME := Catapult
-=======
-LOCAL_PACKAGE_NAME := Trebuchet
->>>>>>> upstream/cm-11.0
+
 LOCAL_PRIVILEGED_MODULE := true
 #LOCAL_CERTIFICATE := shared
 
