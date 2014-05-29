@@ -107,6 +107,9 @@ public class DragLayer extends FrameLayout implements ViewGroup.OnHierarchyChang
         for (int i = 0; i < n; i++) {
             final View child = getChildAt(i);
             final FrameLayout.LayoutParams flp = (FrameLayout.LayoutParams) child.getLayoutParams();
+            if (child.getId() == R.id.overview_panel) {
+                continue;
+            }
             if (child instanceof Insettable) {
                 ((Insettable)child).setInsets(insets);
             } else {
@@ -800,8 +803,7 @@ public class DragLayer extends FrameLayout implements ViewGroup.OnHierarchyChang
     /**
      * Note: this is a reimplementation of View.isLayoutRtl() since that is currently hidden api.
      */
-    @Override
-    public boolean isLayoutRtl() {
+    private boolean isLayoutRtl() {
         return (getLayoutDirection() == LAYOUT_DIRECTION_RTL);
     }
 
