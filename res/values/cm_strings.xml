@@ -16,17 +16,12 @@
 -->
 <resources>
     <!-- Application name -->
-<<<<<<< HEAD
-    <string name="cm_application_name" translatable="false">Hellfire Catapult</string>
-    <!-- App copyright -->
-    <string name="application_copyright" translatable="false">Copyright \u00A9 2014 Team HellFire</string>
-=======
-    <string name="cm_application_name" translatable="false">Trebuchet</string>
->>>>>>> upstream/cm-11.0
+    <string name="cm_application_name" translatable="false">HellFire™ Catapult</string>
+
     <!-- App version -->
     <string name="application_version" translatable="false">1.1</string>
 
-    <string name="launcher_settings">LAUNCHER SETTINGS</string>
+    <string name="launcher_settings">HellFire™ Catapult SETTINGS</string>
     <string name="home_screen_settings">HOME SCREEN SETTINGS</string>
     <string name="drawer_settings">DRAWER SETTINGS</string>
 
@@ -40,45 +35,8 @@
     <string name="scrolling_page_outlines">Page outlines</string>
     <string name="scrolling_fade_adjacent">Fade side pages</string>
 
-<<<<<<< HEAD
-
-    <string name="wallpaper_scroll">Scroll wallpaper</string>
-
-    <!-- Settings -->
-    <string name="preferences_title">Settings</string>
-    <!-- Application -->
-    <string name="preferences_application_title">App</string>
-
-    <!-- UI -->
-    <!-- Homescreen -->
-    <string name="preferences_interface_homescreen_title">HellFire™ Homescreen</string>
-    <string name="preferences_interface_homescreen_search_title">Search bar</string>
-    <string name="preferences_interface_homescreen_search_summary">Show persistent search bar at top of screen</string>
-    <string name="preferences_interface_homescreen_general_hide_icon_labels_title">Hide icon labels</string>
-    <string name="preferences_interface_homescreen_general_hide_icon_labels_summary">Hide icon labels on homescreen</string>
-
-    <!-- Drawer -->
-    <string name="preferences_interface_drawer_title">Drawer</string>
-    <string name="preferences_interface_drawer_summary">Apps and widgets drawer</string>
-    <string name="preferences_interface_drawer_apps_category">Apps</string>
-    <string name="preferences_interface_drawer_hidden_apps_title">Hidden apps</string>
-    <string name="preferences_interface_drawer_hidden_apps_summary">Hide apps from the drawer</string>
-    <string name="preferences_interface_drawer_hidden_apps_shortcuts_title">Remove shortcuts</string>
-    <string name="preferences_interface_drawer_hidden_apps_shortcuts_summary">Remove the shortcuts of hidden apps from the homescreen</string>
-    <string name="preferences_interface_drawer_hidden_apps_widgets_title">Remove widgets</string>
-    <string name="preferences_interface_drawer_hidden_apps_widgets_summary">Remove the widgets of hidden apps from the homescreen</string>
-    <string name="preferences_interface_drawer_hide_icon_labels_title">Hide icon labels</string>
-    <string name="preferences_interface_drawer_hide_icon_labels_summary">Hide icon labels in drawer</string>
-
-    <!-- Settings toast messages -->
-    <string name="preferences_search_screen_left_unsupported_toast">You must have a supported search app and CyanogenMod to use this feature.</string>
-
-    <!-- Dock -->
-    <string name="preferences_interface_dock_title">Dock</string>
-=======
     <!-- Wallpaper scroll effect -->
-    <string name="scrolling_wallpaper">Scroll wallpaper</string>
->>>>>>> upstream/cm-11.0
+    <string name="scrolling_wallpaper">Scroll Hellpaper</string>
 
     <!-- General -->
     <string name="dialog_pick_iconpack_title">Pick icon pack</string>
@@ -117,5 +75,5 @@
     <string name="search_screen_left_text">Search panel</string>
 
     <!-- Toast message when search screen on left is not supported -->
-    <string name="search_screen_left_unsupported_toast">You must have a supported search app and CyanogenMod to use this feature.</string>
+    <string name="search_screen_left_unsupported_toast">You must have a supported search app and HellFire™ to use this feature.</string>
 </resources>
