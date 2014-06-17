@@ -1245,6 +1245,8 @@ public class Launcher extends Activity
                         break;
                 }
                 mOverviewSettingsPanel.notifyDataSetInvalidated();
+                SettingsProvider.putInt(getBaseContext(), SettingsProvider.SETTINGS_UI_DRAWER_SORT_MODE,
+                        mAppsCustomizeContent.getSortMode().getValue());
                 return true;
             }
         });
@@ -3174,7 +3176,7 @@ public class Launcher extends Activity
         }
     }
 
-    protected AppsCustomizePagedView getAppsCustomizeContent() {
+    public AppsCustomizePagedView getAppsCustomizeContent() {
         return mAppsCustomizeContent;
     }
 
